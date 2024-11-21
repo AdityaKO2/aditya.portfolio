@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="" href="./assets/Designer.png" class="fav">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Portfolio </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Aditya Chaudhary</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <!-- <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Aditya Chaudhary profile picture" />
+      </div> -->
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Chaudhary Aditya</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <a href='./assets/Aditya_Resume.pdf' class="btn btn-color-2" title="View Aditya's CV" target="_blank">
+            View Resume
+          </a>
+          <a href='./assets/Aditya_Resume.pdf' download class="btn btn-color-1">
+            Download Resume
+          </a>
+        </div>
+        <div id="socials-container">
+          <a href='https://www.linkedin.com/in/aditya-chaudhary-111379247/' target="_blank">
+            <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            />
+          </a>
+          <a href='https://github.com/AdityaK0' target="_blank">
+            <img
+            src="./assets/github.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <br>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <br><br>
+        <div class="about-details-container">
+
+          <div class="text-container">
+            <p>
+              As a recent graduate with a passion for programming and problem-solving, I am eager to leverage my skills in Python development to contribute to innovative projects.
+              With a solid foundation in Python programming gained through academic projects and self-study, I am equipped to tackle challenges and deliver high-quality solution
+            </p>
+             <p></p>
+            <p>
+              I have Showed my skills through the projects which i have made also used python to solve day to day problems
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/pybl.png"
+                  alt="Experience icon"
+                  class="icon3"
+                />
+                <div>
+                  <h3 class="s-text">Python</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/jsbl.png"
+                  alt="Experience icon"
+                  class="icon1"
+                />
+                <div>
+                  <h3 class="s-text">JavaScript</h3>
+                </div>
+              </article>
+              <!-- <article>
+                <img
+                  src="./assets/javabl.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="s-text">Java</h3>
+                </div>
+              </article> -->
+
+
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/djbl.png"
+                  alt="Experience icon"
+                  class="icon3"
+                />
+                <div>
+                  <h3 class="s-text">Django</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/frappe.png"
+                  alt="Experience icon"
+                  class="frappe-icon"
+                />
+                <div>
+                  <h3 class="s-text">frappe(ErpNext)</h3>
+                </div>
+              </article>
+              <!-- <article>
+                <img
+                  src="./assets/jinjabl.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="s-text">Jinja</h3>
+                </div>
+              </article> -->
+ 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/htmlbl.png"
+                  alt="Experience icon"
+                  class="icon-large"
+                />
+                <div>
+                  <h3 class="s-text">HTML</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/cssbl.png"
+                  alt="Experience icon"
+                  class="icon1"
+                />
+                <div>
+                  <h3 class="s-text">CSS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/jsbl.png"
+                  alt="Experience icon"
+                  class="icon3"
+                />
+                <div>
+                  <h3 class="s-text">JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/bootbl.png"
+                  alt="Experience icon"
+                  class="icon3"
+                />
+                <div>
+                  <h3 class="s-text">Bootstrap</h3>
+                </div>
+              </article>
+
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">DBMS & RDBMS</h2>
+            <div class="article-container">
+              
+              <article>
+                <img
+                  src="./assets/postgrebl.png"
+                  alt="Experience icon"
+                  class="icon3"
+                />
+                <div>
+                  <h3 class="s-text">PostgreSQL</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mariadbbl.png"
+                  alt="Experience icon"
+                  class="icon1"
+                />
+                <div>
+                  <h3 class="s-text">MariaDB</h3>
+                </div>
+              </article>
+              <!-- <article>
+                <img
+                  src="./assets/mariadbbl.png"
+                  alt="Experience icon"
+                  class="icon1"
+                />
+                <div>
+                  <h3 >MariaDB</h3>
+                </div>
+              </article> -->
+              <article>
+                <img
+                  src="./assets/MySQL-logo-6C88CC06F1-seeklogo.com.png"
+                  alt="Experience icon"
+                  class="maria-icon"
+                />
+                <div>
+                  <!-- <h3 class="s-text">MySQL</h3> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mongobl.png"
+                  alt="Experience icon"
+                  class="icon2"
+                />
+                <div>
+                  <!-- <h3>MongoDB</h3> -->
+                </div>
+              </article>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Soft Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/gitbl.png"
+                  alt="Experience icon"
+                  class="icon3"
+                />
+                <div>
+                  <h3 class="s-text">GitHub</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/gitlabbl.png"
+                  alt="Experience icon"
+                  class="icon3"
+                />
+                <div>
+                  <h3 class="s-text">GitLab</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/postmanbl.png"
+                  alt="Experience icon"
+                  class="icon3"
+                />
+                <div>
+                  <h3 class="s-text">Postman</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+
+    <!-- Experience -->
+    <section class="experience-section" id="experience">
+      <div class="experience-header">
+        <h2>Professional Experience</h2>
+      </div>
+
+        <div class="experience-card">
+          <h3 class="job-title">Python/Backend Developer</h3>
+          <p class="company-name">Techseria <span class="job-duration">May 2024 - Present</span></p>
+          &nbsp;
+          <ul class="job-description">
+            <li>As a Python Developer at Techseria since May 2024, I have significantly enhanced my skills in the Frappe
+              framework while working on the Singapore client project, Digo. I’ve developed functionalities such as Reports,
+              Print Formats, and Workflows, and gained proficiency in User Management and API Integration. My
+              experience also includes Scheduling automated tasks, Form Customization, Notifications, Search and Filters,
+              and Data Import/Export, deepening my understanding of Frappe’s diverse capabilities in ERP systems
+            </li>
+
+            <li>Created a module(app) Azure Backup . It is used to take backup of the site it's an app which can be installed in
+              frappe website after installing we have to configure the azure container details such as azure account name,
+              Azure account-key , Azure container Name , Backup Type - DB/DB+Files , Backup Time , retention days , after
+              Adding and saving this detail in doctype . user can have backup manually by clicking on button (Added Using JS) or he can 
+              just mention the time so that script automatically gonna start backup process at given time 
+            </li>
+            <li>Conducted code reviews and optimized performance for high-traffic applications.Solved issues related to Scheduler Job/Crone , PDF Generation and Download , Image Rotate Issue</li>
+          </ul>
+          <h4 class="skills-title">Skills Acquired</h4>
+          <div class="skills-list">
+            <span>Python</span>
+            <span>Frappe(ErpNext)</span>
+            <span>JavaScript</span>
+            <span>Jinja Template Engine</span>
+            <span>HTML5</span>
+            <span>Postman</span>
+            <span>MariaDB</span>
+            <span>GitLab</span>
+          </div>
+        </div>
+
+        &nbsp;
+        <div class="experience-card">
+          <h3 class="job-title">Backend Developer</h3>
+          <p class="company-name">BrainyBeam Technologies <span class="job-duration">Aug 2023 - April 2024</span></p>
+          &nbsp;
+          
+          <ul class="job-description">
+            <li>Joined the firm for a college project, focusing on learning Django and backend development.</li>
+            <li>
+              Led the development of a hotel booking web app project using Django, Python, HTML/CSS, JavaScript, and MySQL. Integrated user authentication, order history, and payment processing through Razorpay, and deployed the code on 
+              <a class="github-link" href="https://github.com/AdityaK0/hotelbooking-website" target="_blank"><span>GitHub</span></a>.
+            </li>
+            
+          </ul>
+          <h4 class="skills-title">Skills Acquired</h4>
+          <div class="skills-list">
+            <span>Python</span>
+            <span>Django</span>
+            <span>JavaScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Bootstrap</span>
+            <span>DRF (Django REST Framework)</span>
+            <span>MySql</span>
+            <span>GitHub</span>
+            <span>Pandas python libraries</span>
+          </div>
+        </div>
+        
+        <!-- Add more experience cards as needed -->
+    </section>
+         
+
+    <!-- projects -->
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container1">
+        <div class="about-containers">
+          <!-- <div class="details-container1 color-container">
+            <div class="article-container">
+              <img
+                src="./assets/newp.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">NewsAPI</h2>
+            <div class="btn-container">
+              <a href="https://github.com/AdityaK0/NewsWebsite-Using-API" target="_blank">
+                <button class="project-button git-live">GitHub</button>
+              </a>
+              <a href="https://newswebapp-gilt.vercel.app/" target="_blank">
+                <button class="project-button git-live">Live</button>
+              </a>
+              <a href="https://github.com/AdityaK0/NewsWebsite-Using-API/blob/main/README.md" target="_blank">
+                <button class="project-button why">Why</button>
+
+              </a>
+
+
+            </div>
+          </div> -->
+          <div class="details-container1 color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">News Portal</h2>
+            <div class="btn-container">
+              <a href="https://github.com/AdityaK0/NewsWebsite-Using-API" target="_blank">
+                <button class="project-button git-live">GitHub</button>
+              </a>
+              <a href="https://newswebapp-gilt.vercel.app/" target="_blank">
+                <button class="project-button git-live">Live</button>
+              </a>
+              <a href="https://github.com/AdityaK0/NewsWebsite-Using-API/blob/main/README.md" target="_blank">
+                <button class="project-button why">Why</button>
+
+              </a>
+            </div>
+          </div>
+          <!-- <div class="details-container1 color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">NewsAPI</h2>
+            <div class="btn-container">
+              <a href="https://github.com/AdityaK0/NewsWebsite-Using-API" target="_blank">
+                <button class="project-button git-live">GitHub</button>
+              </a>
+              <a href="https://newswebapp-gilt.vercel.app/" target="_blank">
+                <button class="project-button git-live">Live</button>
+              </a>
+              <a href="https://github.com/AdityaK0/NewsWebsite-Using-API/blob/main/README.md" target="_blank">
+                <button class="project-button why">Why</button>
+
+              </a>
+            </div>
+          </div> -->
+          
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    
+
+    <div id="education">
+      <h1 class="title" style="margin-bottom:3rem;">Education Journey</h1>
+        
+        <div class="education-timeline">
+          <div class="education-card" style="margin-top: 1.5rem;">
+            <div class="education-icon">🎓</div>
+            <div class="content">
+              <h2>Gujarat University</h2>
+              <h3>Bachelor of Computer Applications (BCA)</h3>
+              <p class="duration">2021 - 2024</p>
+            </div>
+          </div>
+      
+          <div class="education-card">
+            <div class="education-icon">🏫</div>
+            <div class="content">
+              <h2>Raja Ram Vidhya Vihar</h2>
+              <h3>Higher Secondary School</h3>
+              <p class="duration">2019 - 2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">aditya123905@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/aditya-chaudhary-111379247/" target="_blank">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container wh">
+          <img
+            src="./assets/wh.webp"
+            alt="GitHub icon"
+            class="icon contact-icon em-icon"
+          />
+          <p style="margin-left:-1.2rem" ><a href="https://wa.me/+919327748938" target="_blank">WhatsApp</a></p>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Aditya Chaudhary. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
