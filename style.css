@@ -972,7 +972,7 @@ footer {
 }
 
 .duration::before {
-  content: '📅';
+  content: '\1F4C5'
 }
 
 @media (max-width: 640px) {
