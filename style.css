@@ -820,54 +820,131 @@ footer {
   text-decoration: underline; 
 }
 
+.project-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+}
+
+.project-card {
+  /* border: 2px solid #000; */
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow:  0 15px 30px  rgba(0,0,0,0.08);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.project-image-container {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.1);
+}
+
+.project-content {
+  padding: 1.5rem;
+  background-color: #ffffff;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.project-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
 
 .project-button {
-  display: inline-block;
-  padding: 8px 16px; 
-  margin: 8px 0; 
-  font-size: 0.7rem; 
-  width: 4.7rem;
+  text-decoration: none;
+  padding: 5px 15px;
+  border: 2px solid #000;
+  color: #000;
   font-weight: 600;
   text-transform: uppercase;
-  color: white;
-  background-color: #333; 
-  border: 2px solid #333; 
-  border-radius: 20px; 
-  cursor: pointer;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border-radius: 6px;
 }
 
 .project-button:hover {
-  background-color: #fff; 
-  color: #333; 
-  transform: translateY(-2px); 
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  background-color: #000;
+  color: #fff;
 }
 
-.project-button.git-live {
-  background-color: #333; 
-  border: 1px solid #333;
+.project-navigation {
+  text-align: center;
+  margin-top: 3rem;
 }
 
-.project-button.git-live:hover {
-  background-color: #fff; 
-  color: #333; 
- 
-}
 
-.project-button.why {
-  background-color: #333; 
-  border: 1px solid #333; 
-}
+@media (max-width: 768px) {
+  .project-grid {
+      grid-template-columns: 1fr;
+  }
 
-.project-button.why:hover {
-  background-color: #fff; 
-  color: #333; 
- 
+  .section-title {
+      font-size: 2rem;
+  }
+  .project-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+    flex-grow: 1;
+    text-align: center;
 }
-
+.project-actions {
+  flex-direction: column;
+  align-items: stretch;
+  gap:7px;
+}
+}
 
 #education {
   /* margin-top: 3rem; */
