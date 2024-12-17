@@ -54,6 +54,10 @@
     height: 83vh;
     margin-bottom: 0;
   }
+  .job-titleh3{
+    display: block;
+  }
+
   article {
     font-size: 1rem;
   }
