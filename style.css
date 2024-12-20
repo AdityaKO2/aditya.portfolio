@@ -399,8 +399,8 @@ section {
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
+  gap: 2rem;
+  justify-content:space-around;
 }
 
 article {
@@ -741,10 +741,10 @@ footer {
 
 
 /* Experience Section */
-.experience-section {
-  /* padding: 40px;   */
+/* .experience-section {
+  padding: 40px;  
   
-}
+} */
 
 .experience-header h2 {
   font-size: 2rem;
