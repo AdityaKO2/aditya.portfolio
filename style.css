@@ -721,6 +721,7 @@ footer {
 /* footerend */
 .s-text
 {
+  font-size: 1rem;
   margin-top: 0.5rem;
   background-color: #000;
   color: white;
@@ -741,7 +742,7 @@ footer {
 
 /* Experience Section */
 .experience-section {
-  padding: 40px;  
+  /* padding: 40px;   */
   
 }
 

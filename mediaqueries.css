@@ -60,7 +60,37 @@
 
   article {
     font-size: 1rem;
+    width: 6rem;
+    height: 6rem;
+
   }
+  .article-container img{
+    height: 3rem;
+
+  }
+  .s-text
+  {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    background-color: #000;
+    color: white;
+    padding: 3px 0px;
+    border-radius: 3px;
+    width: 100%;
+    
+  }
+  .icon1
+  {
+    margin-bottom: -0.6rem;
+  }
+  
+  .article-container .frappe-icon{
+    height: 1.5rem;
+  }
+  .article-container .maria-icon{
+    height: 2.5rem;
+  }
+
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
