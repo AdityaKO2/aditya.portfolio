@@ -8,7 +8,8 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   </head>
   <body>
     <nav id="desktop-nav">
@@ -450,13 +451,11 @@
          
     
     <!-- projects -->
-
     <section class="project-section" id="projects">
-      <div class="section-heading">
-        <p class="section-subtitle">Explore My Recent</p>
-        <h1 class="section-title">Featured Projects</h1>
-      </div>
-    
+     <div class="experience-header">
+      <h2>Professional Experience</h2>
+    </div>
+
       <div class="project-grid">
         <!-- Resource Center Project -->
         <div class="project-card">
@@ -489,9 +488,10 @@
               </a>
             </div>
           </div>
-    
+
+          <h2 class="project-title">Resource Center</h2>
           <div class="project-content">
-            <h2 class="project-title">Resource Center</h2>
+          
             <div class="project-actions">
               <a href="https://github.com/AdityaKO2/Resource-Sharer-Platform" class="project-button" target="_blank">GitHub</a>
               <a href="https://resource-sharer-platform-dusky.vercel.app/" class="project-button" target="_blank">Deployed</a>
@@ -510,9 +510,9 @@
               </a>
             </div>
           </div>
-    
+          <h2 class="project-title">News Portal</h2>
           <div class="project-content">
-            <h2 class="project-title">News Portal</h2>
+           
             <div class="project-actions">
               <a href="https://github.com/AdityaK0/NewsWebsite-Using-API" class="project-button" target="_blank">GitHub</a>
               <a href="https://newswebapp-gilt.vercel.app/" class="project-button" target="_blank">Deployed</a>
@@ -520,9 +520,13 @@
             </div>
           </div>
         </div>
+
+
       </div>
     </section>
     
+    
+
     
 
     <div id="education"  style="margin-bottom:3rem;">
@@ -603,5 +607,33 @@
       </div>
     </footer>
     <script src="script.js"></script>
+    <script>
+      document.querySelectorAll('.image-slider').forEach(slider => {
+        const container = slider.querySelector('.image-container');
+        const images = slider.querySelectorAll('.slider-image');
+        const heading = slider.querySelector('.image-heading');
+        const headings = ['Login Page', 'Dashboard', 'Settings']; // Add your headings here
+        let currentIndex = 0;
+  
+        // Set initial width
+        container.style.width = `${images.length * 100}%`;
+        images.forEach(img => img.style.width = `${100 / images.length}%`);
+  
+        slider.querySelector('.prev').addEventListener('click', () => {
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          updateSlider();
+        });
+  
+        slider.querySelector('.next').addEventListener('click', () => {
+          currentIndex = (currentIndex + 1) % images.length;
+          updateSlider();
+        });
+  
+        function updateSlider() {
+          container.style.transform = `translateX(-${currentIndex * (100 / images.length)}%)`;
+          heading.textContent = headings[currentIndex];
+        }
+      });
+    </script>
   </body>
 </html>
