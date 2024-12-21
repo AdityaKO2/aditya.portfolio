@@ -836,25 +836,21 @@ footer {
 }
 
 
-
-
-
 .project-grid {
   display: flex;
-  max-width: 1200px; /* This ensures max 3 cards at full width */
   flex-wrap: wrap;
   gap: 2.5rem;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .project-card {
-  width: 360px;  
-   background: white; 
-     border-radius: 5px;   
-     overflow: hidden;   
-     box-shadow: 0 4px 15px rgba(0,0,0,0.1);  
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+width: 360px;  
+background: white; 
+border-radius: 5px;   
+overflow: hidden;   
+box-shadow: 0 4px 15px rgba(0,0,0,0.1);  
+transition: transform 0.3s ease, box-shadow 0.3s ease;
       
 
 
@@ -937,9 +933,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .project-grid {
-      grid-template-columns: 1fr;
-  }
 
 
   .section-title {
