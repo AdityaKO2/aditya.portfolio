@@ -754,8 +754,10 @@ footer {
   margin-top: 60px;
 }
 .titler{
+  margin-top: 50px;
   text-align: center;
-  color:  #333;;
+  color:  #333;
+  font-size: 2rem;
 }
 
 .experience-card {
@@ -1069,6 +1071,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 @media (max-width: 640px) {
+
   #education {
     padding: 2rem 1rem;
   }
