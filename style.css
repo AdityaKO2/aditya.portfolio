@@ -953,12 +953,12 @@ margin-bottom: 2rem;
       font-size: 2rem;
   }
 
-  .project-button {
+  /* .project-button {
       padding: 0.5rem 1rem;
       font-size: 0.7rem;
       flex-grow: 1;
       text-align: center;
-  }
+  } */
   .firstX{
     display: block;
   }
@@ -1229,12 +1229,11 @@ margin-bottom: 2rem;
 }
 
 .project-button {
-  display: inline-flex;
+  /* display: inline-flex; */
   align-items: center;
   gap: 5px;
   text-decoration: none;
   font-size: 1.1rem;
-  /* padding: 5px 10px; */
   border-radius: 5px;
   background-color: #f0f0f0;
   color: #333;
