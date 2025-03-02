@@ -868,17 +868,7 @@ margin-bottom: 2rem;
 }
 
 
-/* .project-image-container {
-  height: 200px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px;
-  width: 100%;
-} */
+
 .image-title {
   font-size: 1rem;
   color: black;
@@ -1129,6 +1119,7 @@ margin-bottom: 2rem;
 .project-image-container {
   height: auto;
   max-height: 200px;
+  max-width: 360px;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
@@ -1138,6 +1129,32 @@ margin-bottom: 2rem;
   padding: 10px;
   min-width: 360px;
 }
+
+.must-watch-tag {
+
+  background: red;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  animation: blink 1.8s infinite; 
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.must-watch-tag:hover{
+  animation: none;
+  background-color: rgba(128, 128, 128, 0.596);
+  
+}
+
+
+
 
 .image-title {
   font-size: 0.85rem;
