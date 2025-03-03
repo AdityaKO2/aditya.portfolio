@@ -27,6 +27,7 @@
   #profile,
   .section-container {
     display: block;
+    margin-top: 4rem;
   }
   .arrow {
     display: none;
