@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="" href="./assets/aboutiii.jpeg" class="fav">
-    <title>Portfolio</title>
+    <link rel="icon" type="" href="./assets/icon_fav.jpeg" class="fav">
+    <title>Portfolio - Aditya</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -13,7 +13,7 @@
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Portfolio </div>
+      <div class="logo">Portfolio</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -96,8 +96,8 @@
         <!-- <br><br> -->
         
         <div class="about-details-container">
-          <div class="text-container" style="align-items: center;text-align: center;">
-            <p style="align-items: center;">
+          <div class="text-container" style="align-items: center;">
+            <p >
               As a python developer passion for programming and problem-solving, I am eager to leverage my skills in Python development to contribute to innovative projects.
               With a solid foundation in Python programming gained through academic projects and self-study, I am equipped to tackle challenges and deliver high-quality solution
               I have Showed my skills through the projects which i have made also used python to solve day to day problems
@@ -140,7 +140,7 @@
                   src="./assets/jsbl.png"
                   alt="Experience icon"
                   class="icon1"
-                  style="margin-top: 0.6rem;"
+                  style="margin-top: 0.4rem;"
                 />
                 <div>
                   <h3 class="s-text" id="stx" >JavaScript</h3>
@@ -171,6 +171,16 @@
                 />
                 <div>
                   <h3 class="s-text">Django</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/drf.png"
+                  alt="Experience icon"
+                  class="icon3"
+                />
+                <div>
+                  <h3 class="s-text">DRF</h3>
                 </div>
               </article>
               <article>
@@ -208,9 +218,10 @@
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/htmlbl.png"
+                  src="./assets/htmlbw.png"
                   alt="Experience icon"
-                  class="icon-large"
+                  class="icon3"
+
                 />
                 <div>
                   <h3 class="s-text">HTML</h3>
@@ -218,28 +229,42 @@
               </article>
               <article>
                 <img
-                  src="./assets/cssbl.png"
+                  src="./assets/cssbw.png"
                   alt="Experience icon"
-                  class="icon3"
-                  style="margin-top: 0.2rem;"
+                  class="icon1"
+                  style="margin-top: 0.4rem;"
 
                 />
                 <div>
                   <h3 class="s-text">CSS</h3>
                 </div>
               </article>
-              <!-- <article>
+
+              <article>
                 <img
-                  src="./assets/react-1-logo-black-and-white.png"
+                  src="./assets/tailwind-css.png"
                   alt="Experience icon"
-                  class="icon2"
-                  style="margin-top: 1rem;text-align: center;"
+                  class="icon1"
+                  style="margin-top: 0.4rem;"
+
+                />
+                <div>
+                  <h3 class="s-text">TailwindCss</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/atom.png"
+                  alt="Experience icon"
+                  class="maria-icon"
+                  style="margin-left: 0.3rem;margin-top: 0.8rem;"
 
                 />
                 <div>
                   <h3 class="s-text">React js</h3>
                 </div>
-              </article> -->
+              </article>
               <article>
                 <img
                   src="./assets/jsbl.png"
@@ -284,6 +309,7 @@
                   src="./assets/mariadbbl.png"
                   alt="Experience icon"
                   class="icon1"
+                  style="margin-top: 0.5rem;"
                 />
                 <div>
                   <h3 class="s-text">MariaDB</h3>
@@ -304,7 +330,7 @@
                   src="./assets/MySQL-logo-6C88CC06F1-seeklogo.com.png"
                   alt="Experience icon"
                   class="maria-icon"
-                  style="margin-top: 0.5rem;"
+                  style="margin-left: 0.5rem;margin-top: 0.5rem;margin-bottom: 0.36rem;"
                 />
                 <div>
                   <h3 class="s-text">Mysql</h3>
@@ -318,9 +344,9 @@
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">OS & Soft Tools</h2>
+            <h2 class="experience-sub-title">Tool & Technologies</h2>
             <div class="article-container">
-              <article>
+              <!-- <article>
                 <img
                   src="./assets/linuxbl.png"
                   alt="Experience icon"
@@ -339,7 +365,7 @@
                 <div>
                   <h3 class="s-text">Windows</h3>
                 </div>
-              </article>
+              </article> -->
 
               <article>
                 <img
@@ -791,33 +817,5 @@
       </div>
     </footer>
     <script src="script.js"></script>
-    <script>
-      document.querySelectorAll('.image-slider').forEach(slider => {
-        const container = slider.querySelector('.image-container');
-        const images = slider.querySelectorAll('.slider-image');
-        const heading = slider.querySelector('.image-heading');
-        const headings = ['Login Page', 'Dashboard', 'Settings']; // Add your headings here
-        let currentIndex = 0;
-  
-        // Set initial width
-        container.style.width = `${images.length * 100}%`;
-        images.forEach(img => img.style.width = `${100 / images.length}%`);
-  
-        slider.querySelector('.prev').addEventListener('click', () => {
-          currentIndex = (currentIndex - 1 + images.length) % images.length;
-          updateSlider();
-        });
-  
-        slider.querySelector('.next').addEventListener('click', () => {
-          currentIndex = (currentIndex + 1) % images.length;
-          updateSlider();
-        });
-  
-        function updateSlider() {
-          container.style.transform = `translateX(-${currentIndex * (100 / images.length)}%)`;
-          heading.textContent = headings[currentIndex];
-        }
-      });
-    </script>
   </body>
 </html>
