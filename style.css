@@ -405,8 +405,8 @@ section .arrow{
 }
 
 article {
-  width: 7rem;
-  height: 7.5rem;
+  width: 6.9rem;
+  height: 7.4rem;
   text-align: center;
   padding: 1px 12px;
   border-radius: 3px;
@@ -690,7 +690,7 @@ footer {
 /* footerend */
 .s-text
 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   /* margin-top: 0.5rem; */
   background-color: #000;
   color: white;
