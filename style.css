@@ -507,8 +507,8 @@ article .icon {
 }
 
 .contact-info-container.wh img.em-icon {
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 .contact-info-container p {
@@ -1256,3 +1256,15 @@ margin-bottom: 2rem;
     font-size: 12px;
   }
 }
+
+
+.theme-btn{
+  padding: 3px 9px;
+  border: none;
+  border-radius: 6px;
+  font-family: system-ui;
+  font-weight: 600;
+  min-width: 90px;
+  cursor: pointer;
+}
+
