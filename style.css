@@ -21,6 +21,10 @@ body {
   
 }
 
+.nav-links li:hover a {
+  color: #3498db;
+}
+
 html {
   scroll-behavior: smooth;
 }
