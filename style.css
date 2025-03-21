@@ -293,6 +293,7 @@ section {
 .btn-color-2:hover {
   cursor: pointer;
   text-decoration: none;
+
 }
 
 .btn-color-1,
@@ -418,7 +419,7 @@ article {
   height: 7.4rem;
   text-align: center;
   padding: 1px 12px;
-  border-radius: 7px;
+  border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 5px 2px 4px rgba(0, 0, 0, 0.05);
   
 
