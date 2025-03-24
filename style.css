@@ -794,7 +794,7 @@ footer {
 .experience-card {
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 13px;
+  border-radius: 10px;
   padding: 23px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -914,7 +914,7 @@ margin-bottom: 2rem;
   max-width: 980px;
   margin: 0 auto 2rem;
   background: white;
-  border-radius: 13px;
+  border-radius: 10px;
   overflow: hidden;
   box-shadow: 5px 5px 20px rgba(0.1, 0.1, 0.1, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
