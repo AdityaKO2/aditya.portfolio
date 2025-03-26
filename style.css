@@ -597,6 +597,10 @@ article .icon {
 
 /* Media Queries */
 @media (max-width: 768px) {
+  .desktop-nav{
+    margin: 0rem;
+    padding: 0rem;
+  }
   #contact {
     padding: 1rem;
   }
@@ -620,6 +624,10 @@ article .icon {
 @media (max-width: 480px) {
   .section__text__p1 {
     font-size: 1rem;
+  }
+  .desktop-nav{
+    margin: 0rem;
+    padding: 0rem;
   }
 
   .title {
