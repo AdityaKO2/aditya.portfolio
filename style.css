@@ -599,7 +599,7 @@ article .icon {
 @media (max-width: 768px) {
   .desktop-nav{
     margin: 0rem;
-    padding: 0rem;
+    padding: 7px 14px;
   }
   #contact {
     padding: 1rem;
@@ -627,7 +627,7 @@ article .icon {
   }
   .desktop-nav{
     margin: 0rem;
-    padding: 0rem;
+    padding: 7px 14px;
   }
 
   .title {
